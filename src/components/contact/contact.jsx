@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Contact = () => {
+const Contactt = () => {
   return (
     <>
       <section class="bg-white dark:bg-gray-900">
@@ -28,4 +28,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default Contactt
