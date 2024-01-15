@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
+import LoginGoogle from "../login/login";
 
 const Navbar = () => {
   return (
     <>
       <header>
-        <nav className="bg-blue-500 border-blue-200 px-4 lg:px-6 py-2.5 hover:bg-blue-600 fixed w-full">
+        <p>{LoginGoogle.credentialResponse}</p>
+        <nav className="bg-blue-800 border-blue-200 px-4 lg:px-6 py-2.5 fixed w-full">
           <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
             <Link to="/" className="flex items-center">
               <img
@@ -29,7 +31,7 @@ const Navbar = () => {
                 to="/signup"
                 className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
               >
-                Get started
+                {name}
               </Link>
               <button
                 data-collapse-toggle="mobile-menu-2"

@@ -45,7 +45,7 @@ const Login = () => {
         </h1>
         <form className="space-y-4" onSubmit={formik.handleSubmit}>
           <div>
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-blue-400">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-blue-900">
               Your email
             </label>
             <input
@@ -64,7 +64,7 @@ const Login = () => {
             )}
           </div>
           <div>
-            <label htmlFor="password" className="block mb-2 text-sm font-medium text-blue-400 ">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-blue-900 ">
               Password
             </label>
             <input
@@ -96,14 +96,14 @@ const Login = () => {
                 />
               </div>
               <div className="ml-3 text-sm">
-                <label htmlFor="rememberMe" className=" text-blue-400">
+                <label htmlFor="rememberMe" className=" text-blue-900">
                   Remember me
                 </label>
               </div>
             </div>
             <Link
               to="/emailtaking"
-              className="text-sm font-medium text-blue-400 hover:underline dark:text-blue-300 "
+              className="text-sm font-medium text-blue-900 hover:underline  "
             >
               Forgot password?
             </Link>
@@ -114,9 +114,9 @@ const Login = () => {
           >
             Sign in
           </button>
-          <p className="text-sm font-light text-blue-400 mt-2">
+          <p className="text-sm font-light text-blue-900 mt-2">
             Don’t have an account yet?{' '}
-            <Link to="/signup" className="font-medium text-blue-400 hover:underline dark:text-blue-300">
+            <Link to="/signup" className="font-medium text-blue-900 hover:underline ">
               Sign up
             </Link>
           </p>

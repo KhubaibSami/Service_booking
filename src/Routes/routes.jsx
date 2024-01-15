@@ -11,7 +11,8 @@ import Signup from "../modules/form/components/signup/signup";
 import Reset from "../modules/form/components/resetPAssword/resetPAssword";
 import OTPVerification from "../modules/form/components/opt/opt";
 import EmailInputPage from "../modules/form/components/email/email";
-import Contactt from "../components/contact/contact";
+// import Contact from "../components/contact/contact";
+import LoginGoogle from "../components/login/login";
 
 const Routing = () => {
   return (
@@ -20,7 +21,7 @@ const Routing = () => {
         <Route path="/" element={<Layout />}>
           <Route path="/" element={<Nonlayout />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={ <Contactt/> } />
+          {/* <Route path="/contact" element={ <Contact/> } /> */}
           <Route path="/faq" element={<Faq />} />
         </Route>
         <Route path="*" element={<NotFound />} />
@@ -29,6 +30,7 @@ const Routing = () => {
         <Route path="/reset" element={<Reset />} />
         <Route path="/otp" element={<OTPVerification />} />
         <Route path="/emailtaking" element={ <EmailInputPage/> } />
+        <Route path="/google" element={ <LoginGoogle/> } />
       </Routes>
     </>
   );

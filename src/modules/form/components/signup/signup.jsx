@@ -49,7 +49,7 @@ const Signup = () => {
         </h1>
         <form className="space-y-4" onSubmit={formik.handleSubmit}>
           <div>
-            <label htmlFor="email" className="block mb-2 text-sm font-medium text-blue-400">
+            <label htmlFor="email" className="block mb-2 text-sm font-medium text-blue-900">
               Your email
             </label>
             <input
@@ -68,7 +68,7 @@ const Signup = () => {
             )}
           </div>
           <div>
-            <label htmlFor="password" className="block mb-2 text-sm font-medium text-blue-400">
+            <label htmlFor="password" className="block mb-2 text-sm font-medium text-blue-900">
               Password
             </label>
             <input
@@ -87,7 +87,7 @@ const Signup = () => {
             )}
           </div>
           <div>
-            <label htmlFor="confirmPassword" className="block mb-2 text-sm font-medium text-blue-400">
+            <label htmlFor="confirmPassword" className="block mb-2 text-sm font-medium text-blue-900">
               Confirm password
             </label>
             <input
@@ -115,11 +115,11 @@ const Signup = () => {
               className="w-4 h-4 border border-blue-300 rounded bg-white focus:ring-3 focus:ring-blue-500 dark:border-blue-300"
               required
             />
-            <label htmlFor="terms" className="ml-3 text-sm font-light text-blue-400">
+            <label htmlFor="terms" className="ml-3 text-sm font-light text-blue-900">
               I accept the{' '}
-              <a className="font-medium text-blue-200 hover:underline dark:text-blue-300" href="#">
+              <Link className="font-medium text-blue-900 hover:underline " to="/terms">
                 Terms and Conditions
-              </a>
+              </Link>
             </label>
           </div>
           {formik.touched.terms && formik.errors.terms && (
@@ -127,13 +127,13 @@ const Signup = () => {
           )}
           <button
             type="submit"
-            className="w-full text-white bg-blue-500 hover:bg-blue-600 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+            className="w-full text-white bg-blue-900  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
           >
             Create an account
           </button>
-          <p className="text-sm font-light text-blue-400 mt-2">
+          <p className="text-sm font-light text-blue-900 mt-2">
             Already have an account?{' '}
-            <Link to="/login" className="font-medium text-blue-200 hover:underline dark:text-blue-300">
+            <Link to="/login" className="font-medium text-blue-900 hover:underline ">
               Login here
             </Link>
           </p>
