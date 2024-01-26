@@ -1,13 +1,14 @@
-import React from 'react'
-import Home from '../modules/home/pages/home'
-
+import React from 'react';
+import Homepage from '../modules/homepage/pages/homepage';
+import { Link } from 'react-router-dom';
 
 const Nonlayout = () => {
   return (
     <>
-            <Home />
-    </>
-  )
-}
+      <Homepage />
 
-export default Nonlayout
+    </>
+  );
+};
+
+export default Nonlayout;

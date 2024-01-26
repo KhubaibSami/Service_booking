@@ -4,6 +4,7 @@ import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { FaGoogle, FaFacebook } from 'react-icons/fa';
 import logo from "../../../../assets/images/logo.png";
+import axiosInstances from '../../../../config/callApi';
 
 const SignupSchema = Yup.object().shape({
   email: Yup.string().email('Invalid email address').required('Required'),
@@ -25,9 +26,9 @@ const Signup = () => {
     console.log('Facebook sign-in clicked');
   };
 
-  const handleSubmit = (values) => {
-    // Handle form submission logic
-    console.log('Form submitted:', values);
+  const handleSubmit = async() => {
+    const response = await axiosInstances.post("/provider/register")
+    console.log('Form submitted:', response);
   };
 
   const formik = useFormik({
